@@ -24,21 +24,21 @@ as such:
 ```json 
 [ 
     {
-        country:"US", 
-        languages: ["en"] 
+        "country":"US", 
+        "languages": ["en"] 
     }, 
     { 
-        country:"BE", 
-        languages: ["nl","fr","de"] 
+        "country":"BE", 
+        "languages": ["nl","fr","de"] 
     }, 
-    {   country:"NL",
-        languages: ["nl"] 
+    {   "country":"NL",
+        "languages": ["nl"] 
     }, 
-    {   country:"DE", 
-        languages: ["de"]
+    {   "country":"DE", 
+        "languages": ["de"]
     }, 
-    {   country:"ES", 
-        languages: ["es"] 
+    {   "country":"ES", 
+        "languages": ["es"] 
     } 
 ]
 ```
