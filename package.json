@@ -11,5 +11,10 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "git-commit-msg-linter": "^4.2.1",
+    "typescript": "^4.8.4"
   }
 }
