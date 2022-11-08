@@ -1,7 +1,9 @@
-export class PrinterService {
-    printer(data: Array<number>): Array<any> {
+import { numberIsDivisibleByFive, numberIsDivisibleByThree } from "../util/dividers"
 
-        return data.map(item => {
+export class PrinterService {
+    printer(range: number): Array<number | string> {
+
+        return [...Array.from(Array(range).keys())].map(item => {
             
             if(numberIsDivisibleByThree(item) && numberIsDivisibleByFive(item)) {
                 return "Visual Nuts"
@@ -18,12 +20,4 @@ export class PrinterService {
             return item
         })
     }
-}
-
-function numberIsDivisibleByThree(data: number):boolean {
-    return data % 3 === 0
-}
-
-function numberIsDivisibleByFive(data: number):boolean {
-    return data % 5 === 0
 }
