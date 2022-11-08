@@ -18,7 +18,7 @@ describe("Print Controller", () => {
 
     describe("GET /print-numbers", () => {
 
-        it("should return 200 and data", async() => {
+        it("should return 200 and data", (done) => {
             request = createRequest({
                 method: 'GET',
                 url: '/print-numbers?range=100',
@@ -30,10 +30,10 @@ describe("Print Controller", () => {
                 expect(response.statusMessage).toBe("OK")
                 expect(JSON.parse(response._getData())).toEqual(expect.arrayContaining([expect.any]))
             }  
-
+            done()
         })
-
-        it("should define a default range when user doesn't input it and return status 200 and data", async() => {
+        
+        it("should define a default range when user doesn't input it and return status 200 and data", (done) => {
             request = createRequest({
                 method: 'GET',
                 url: '/print-numbers',
@@ -43,8 +43,9 @@ describe("Print Controller", () => {
                 expect(response.getHeaders()).toHaveProperty('content-type');
                 expect(response.statusCode).toBe(200);
                 expect(response.statusMessage).toBe("OK")
-                expect(JSON.parse(response._getData())).toEqual(expect.arrayContaining([expect.any]))
-            }
+                expect(JSON.parse(response._getData())).toEqual(expect.arrayContaining([expect.any]))  
+              }
+              done()
         })
     })
 })
