@@ -5,7 +5,8 @@
   "main": "src/server.ts",
   "scripts": {
     "watch": "nodemon --watch src src/server.ts",
-    "test": "jest"
+    "debug-test": "npm test -- --watch",
+    "test": "jest --runInBand --detectOpenHandles"
   },
   "keywords": [],
   "author": "",

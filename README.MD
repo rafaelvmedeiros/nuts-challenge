@@ -19,8 +19,13 @@
 ## Routes
 1) Exercise  
 ``/print-numbers?range=100``
+PS.: Whether query params isn't defined, the default value (100) will be defined.
 
-Whether query params isn't defined, the default value (100) will be defined.
 
 2) Exercise
+``/countries/list``
+``/countries/official-languages?language=de``
+``/countries/highest-languages``
+``/countries/common-languages``
 
+PS.: I know that one controller should have just five methods: get, put, post, patch and delete. I've create the countries functions inside of same controller just to abreviate it.
