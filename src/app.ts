@@ -8,11 +8,16 @@ class App {
     constructor() {
      this.server = express()
      this.routes()
+     this.middlewares()
      this.exceptionHandler()
     }
     
     routes() {
       this.server.use(routes)
+    }
+
+    middlewares() {
+      this.server.use(express.json())
     }
 
     exceptionHandler() {
