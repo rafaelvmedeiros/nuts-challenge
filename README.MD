@@ -1,51 +1,26 @@
 # VISUAL NUTS Javascript Challenge
 
-General notes: For all exercises we expect actual runnable javascript code and test to be
-provided. Imagine that all code you provide here is of the highest importance for the company,
-and target core features of our product. So the provided code should be up to production
-level quality.
+[Visual Nuts Documentation](https://drive.google.com/file/d/1BDf0hxtaCxh1vgPqFPusn9T4Rai9rsy4/view?usp=share_link)
 
+## Technologies and tools
 
-## Exercise 1:
-Write or describe an algorithm that prints the whole integer numbers to the console, start
-from the number 1, and print all numbers going up to the number 100.
-However, when the number is divisible by 3, do not print the number, but print the word
-'Visual'. If the number is divisible by 5, do not print the number, but print 'Nuts'. And for
-all numbers divisible by both (eg: the number 15) the same, but print 'Visual Nuts'.
-How will you keep this code safe from bugs? Show how you would guarantee that this code
-keeps working when developers start making small feature adjustments. (Maybe we would
-want to print the first 500 numbers, ...).
+*  Commit Message Linter - hook it will run at every commiting to make sure that the message to commit is valid against the conventions
+*  Jest -  Javascript Tester Tool
+* TypeScript - Static Typing
+* Eslint  - Find and Fix problems in the code
+* Husky - Help creating hooks in pre or pos commits. For instance, format the code using eslint before commit something.
 
-## Exercise 2:
-Image you have a set of data in JSON, describing official languages spoken by countries,
-as such:
+## Install Dependencies
+``npm install``
 
+## Run Tests
+``npm test``
 
-```json 
-[ 
-    {
-        "country":"US", 
-        "languages": ["en"] 
-    }, 
-    { 
-        "country":"BE", 
-        "languages": ["nl","fr","de"] 
-    }, 
-    {   "country":"NL",
-        "languages": ["nl"] 
-    }, 
-    {   "country":"DE", 
-        "languages": ["de"]
-    }, 
-    {   "country":"ES", 
-        "languages": ["es"] 
-    } 
-]
-```
+## Routes
+1) Exercise  
+``/print-numbers?range=100``
 
-Write a function in javascript that:
-- returns the number of countries in the world
-- finds the country with the most official languages, where they officially speak German
-(de). - that counts all the official languages spoken in the listed countries.
-- to find the country with the highest number of official languages.
-- to find the most common official language(s), of all countries.
+Whether query params isn't defined, the default value (100) will be defined.
+
+2) Exercise
+

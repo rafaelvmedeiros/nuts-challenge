@@ -31,7 +31,7 @@ describe("Print Controller", () => {
                 expect(JSON.parse(response._getData())).toEqual(expect.arrayContaining([expect.any]))
             }  
             done()
-        })
+        }, 2000)
         
         it("should define a default range when user doesn't input it and return status 200 and data", (done) => {
             request = createRequest({
@@ -46,6 +46,6 @@ describe("Print Controller", () => {
                 expect(JSON.parse(response._getData())).toEqual(expect.arrayContaining([expect.any]))  
               }
               done()
-        })
+        }, 2000)
     })
 })
