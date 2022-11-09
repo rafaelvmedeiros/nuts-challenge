@@ -7,14 +7,17 @@
 
 ## Technologies and tools
 
-*  Commit Message Linter - hook it will run at every commiting to make sure that the message to commit is valid against the conventions
-*  Jest -  Javascript Tester Tool
+* Commit Message Linter - hook it will run at every commiting to make sure that the message to commit is valid against the conventions
+* Jest -  Javascript Tester Tool
 * TypeScript - Static Typing
 * Eslint  - Find and Fix problems in the code
 * Husky - Help creating hooks in pre or pos commits. For instance, format the code using eslint before commit something.
 
 ## Install Dependencies
 ``npm install``
+
+## Run Project
+``npm run watch``
 
 ## Run Tests
 ``npm test``
